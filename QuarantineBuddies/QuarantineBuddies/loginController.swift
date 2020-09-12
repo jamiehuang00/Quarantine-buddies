@@ -22,6 +22,9 @@ class loginController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgot: UIButton!
     @IBOutlet weak var email: UITextField!
     
+    var prevUser:Bool = true
+    var id = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -35,6 +38,7 @@ class loginController: UIViewController, UITextFieldDelegate {
             signIn.titleLabel?.text = "REGISTER"
             email.isHidden = false
             forgot.isHidden = false
+            prevUser = false
         }
         else {
             label.text = "Log in"
@@ -42,12 +46,42 @@ class loginController: UIViewController, UITextFieldDelegate {
             signIn.titleLabel?.text = "LOGIN"
             forgot.isHidden = false
             email.isHidden = true
+            prevUser = true
+        }
+    }
+    
+    func loginButtonPressed (_ sender: UIButton) {
+        if let emailLiteral = email.text, let passwordLiteral = password.text {
+        
+        if prevUser {
+            Auth.auth().signIn(withEmail: emailLiteral , password: passwordLiteral) { (user, error) in
+                if user != nil {
+                    self.id = emailLiteral
+                    self.performSegue(withIdentifier: "toItems", sender: self)
+                }
+                else {
+                    //error
+                }
+            }
+        }
+            
+        else {
+            Auth.auth().createUser(withEmail: emailLiteral, password: passwordLiteral) { (user, error) in
+                if user != nil {
+                    self.id = emailLiteral
+                    self.performSegue(withIdentifier: "toItems", sender: self)
+                }
+                else {
+                    //error
+                }
+            }
+        }
         }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //           self.view.endEditing(true)
-//           // dismiss the keyboard when the veiw is tapped on
+//           // dismiss the keyboard when the view is tapped on
            username.resignFirstResponder()
            password.resignFirstResponder()
        }
@@ -56,8 +90,11 @@ class loginController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return (true)
     }
-    
-    
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! ViewControllerSupplement
+    }
+    */
     
     
 }

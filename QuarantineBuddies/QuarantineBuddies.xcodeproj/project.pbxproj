@@ -18,6 +18,7 @@
 		BB90D4EF250C5B4A0006302E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB90D4ED250C5B4A0006302E /* Main.storyboard */; };
 		BB90D4F1250C5B4C0006302E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90D4F0250C5B4C0006302E /* Assets.xcassets */; };
 		BB90D4F4250C5B4C0006302E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB90D4F2250C5B4C0006302E /* LaunchScreen.storyboard */; };
+		F9B7E48C250D473D009B8FE2 /* ViewControllerSupplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E48B250D473D009B8FE2 /* ViewControllerSupplement.swift */; };
 		F9C6CC85250C94000009F1BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9C6CC84250C93FF0009F1BD /* GoogleService-Info.plist */; };
 		F9E551AD250C8A5F00FE2552 /* Pods-QuarantineBuddies.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BED7E4FFE3A15C51FFDF1F41 /* Pods-QuarantineBuddies.debug.xcconfig */; };
 		F9E551AE250C8A6400FE2552 /* Pods-QuarantineBuddies.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E8665BC06DEC854CAAA91AE7 /* Pods-QuarantineBuddies.release.xcconfig */; };
@@ -39,6 +40,7 @@
 		BB90D4F5250C5B4C0006302E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED7E4FFE3A15C51FFDF1F41 /* Pods-QuarantineBuddies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuarantineBuddies.debug.xcconfig"; path = "Target Support Files/Pods-QuarantineBuddies/Pods-QuarantineBuddies.debug.xcconfig"; sourceTree = "<group>"; };
 		E8665BC06DEC854CAAA91AE7 /* Pods-QuarantineBuddies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuarantineBuddies.release.xcconfig"; path = "Target Support Files/Pods-QuarantineBuddies/Pods-QuarantineBuddies.release.xcconfig"; sourceTree = "<group>"; };
+		F9B7E48B250D473D009B8FE2 /* ViewControllerSupplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSupplement.swift; sourceTree = "<group>"; };
 		F9C6CC84250C93FF0009F1BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				BB90D4E9250C5B4A0006302E /* SceneDelegate.swift */,
 				BB90D4EB250C5B4A0006302E /* TitleController.swift */,
 				BB5F564D250C7C21002623F4 /* loginController.swift */,
+				F9B7E48B250D473D009B8FE2 /* ViewControllerSupplement.swift */,
 				BB90D4ED250C5B4A0006302E /* Main.storyboard */,
 				BB739959250CB662001E2A1B /* chatViewController.swift */,
 				BB5F5653250C7C69002623F4 /* matchController.swift */,
@@ -231,6 +234,7 @@
 				BB73995A250CB662001E2A1B /* chatViewController.swift in Sources */,
 				BB90D4E8250C5B4A0006302E /* AppDelegate.swift in Sources */,
 				BB5F5652250C7C51002623F4 /* itemsController.swift in Sources */,
+				F9B7E48C250D473D009B8FE2 /* ViewControllerSupplement.swift in Sources */,
 				BB90D4EA250C5B4A0006302E /* SceneDelegate.swift in Sources */,
 				BB5F5654250C7C69002623F4 /* matchController.swift in Sources */,
 			);
