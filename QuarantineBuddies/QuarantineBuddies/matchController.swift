@@ -46,7 +46,7 @@ class matchController: UIViewController, CLLocationManagerDelegate {
                 }
                 if (placemarks?.count)! > 0 {
                     let pm = placemarks?[0] as! CLPlacemark?
-                    let address = (pm?.subThoroughfare)! + " " + (pm?.thoroughfare)! + (pm?.locality)! + "," + (pm?.administrativeArea)! + " " + (pm?.postalCode)! + " " + (pm?.isoCountryCode)!
+                    let address = (pm?.subThoroughfare)! + " " + (pm?.thoroughfare)!  + " " + (pm?.locality)! + "," + " " + (pm?.administrativeArea)! + " " + (pm?.postalCode)! + " " + (pm?.isoCountryCode)!
                     print(address)
                     self.latLngLabel.text = address
                 }

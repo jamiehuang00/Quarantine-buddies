@@ -47,7 +47,7 @@ class chatViewController: MessagesViewController, MessagesDataSource, MessagesLa
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
         return messages.count
     }
-    
+
 
     /*
     // MARK: - Navigation
