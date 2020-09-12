@@ -30,6 +30,7 @@ class itemsController: UIViewController {
         haveCollection.forEach { (button) in
             UIView.animate(withDuration: 0.3, animations: {
                 button.isHidden = !button.isHidden
+                button.layer.borderWidth = 2
                 self.view.layoutIfNeeded()
             })
         }
@@ -40,6 +41,7 @@ class itemsController: UIViewController {
         needCollection.forEach { (button) in
             UIView.animate(withDuration: 0.3, animations: {
                 button.isHidden = !button.isHidden
+                button.layer.borderWidth = 2
                 self.view.layoutIfNeeded()
             })
         }
@@ -47,6 +49,7 @@ class itemsController: UIViewController {
     
     
     @IBAction func haveTapped(_ sender: Any) {
+        
     }
     
 }

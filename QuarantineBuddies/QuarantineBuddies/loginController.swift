@@ -20,6 +20,7 @@ class loginController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signIn: UIButton!
     @IBOutlet weak var confirmpassword: UITextField!
     @IBOutlet weak var forgot: UIButton!
+    @IBOutlet weak var email: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,16 +29,19 @@ class loginController: UIViewController, UITextFieldDelegate {
     
     @IBAction func changeLabel(_ sender: Any) {
         if segment.selectedSegmentIndex == 1 {
-            label.text = "Signup"
+            label.text = "Register"
+            label.font.withSize(10)
             confirmpassword.isHidden = false
-            signIn.titleLabel?.text = "SIGNUP"
-            forgot.isHidden = true
+            signIn.titleLabel?.text = "REGISTER"
+            email.isHidden = true
+            forgot.isHidden = false
         }
         else {
             label.text = "Log in"
             confirmpassword.isHidden = true
             signIn.titleLabel?.text = "LOGIN"
             forgot.isHidden = false
+            email.isHidden = true
         }
     }
     
