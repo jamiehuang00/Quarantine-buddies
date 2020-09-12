@@ -38,8 +38,21 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         if let location = locations.last {
             latLngLabel.text = "Lat: \(location.coordinate.latitude) \nLng: \(location.coordinate.longitude)"
             latLngLabel.font = UIFont(name: "Avenir", size: 15.0)
+            let location1 = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            let location2 = CLLocation(latitude: -37, longitude: -122)
+            let distance = location1.distance(from: location2) // result is in meters
+            print(distance)
+            if (distance <= 10) {
+                print("True")
+            }
+            else {
+                print("False")
+            }
         }
+        
+    
     }
+
 }
 
 
