@@ -36,9 +36,24 @@ class matchController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            latLngLabel.text = "Lat: \(location.coordinate.latitude) \nLng: \(location.coordinate.longitude)"
+//            latLngLabel.text = "Lat: \(location.coordinate.latitude) \nLng: \(location.coordinate.longitude)"
             latLngLabel.font = UIFont(name: "Avenir", size: 15.0)
             let location1 = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            CLGeocoder().reverseGeocodeLocation(location, completionHandler:  {(placemarks, error) -> Void in
+                if error != nil {
+                    print("failed")
+                    return
+                }
+                if (placemarks?.count)! > 0 {
+                    let pm = placemarks?[0] as! CLPlacemark?
+                    let address = (pm?.subThoroughfare)! + " " + (pm?.thoroughfare)! + (pm?.locality)! + "," + (pm?.administrativeArea)! + " " + (pm?.postalCode)! + " " + (pm?.isoCountryCode)!
+                    print(address)
+                    self.latLngLabel.text = address
+                }
+                else {
+                    print("error")
+                }
+            })
             let location2 = CLLocation(latitude: -37, longitude: -122)
             let distance = location1.distance(from: location2) // result is in meters
             print(distance)
