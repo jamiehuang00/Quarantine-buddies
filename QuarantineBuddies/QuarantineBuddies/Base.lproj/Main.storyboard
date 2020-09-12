@@ -292,6 +292,7 @@
                                 </state>
                                 <connections>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="3Ls-63-asM"/>
+                                    <action selector="masks1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="94F-ZP-U4d"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBt-eQ-UJJ" userLabel="hs1">
@@ -303,6 +304,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="handsani1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="ht8-G2-XfP"/>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="Dev-xf-kGY"/>
                                 </connections>
                             </button>
@@ -315,6 +317,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="gloves1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="oxt-2e-cAX"/>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="a1J-4z-3NS"/>
                                 </connections>
                             </button>
@@ -328,6 +331,7 @@
                                 </state>
                                 <connections>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="I4e-o5-JTs"/>
+                                    <action selector="soap1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="Qcj-Dq-BNf"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QU-U0-Qgg" userLabel="tp1">
@@ -340,6 +344,7 @@
                                 </state>
                                 <connections>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="bpF-ml-7Et"/>
+                                    <action selector="toiletpaper1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="dVq-Gt-TKq"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5X-kC-kLx" userLabel="pt1">
@@ -352,18 +357,7 @@
                                 </state>
                                 <connections>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="PUB-I7-B8l"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rs-rq-MeT" userLabel="sw1">
-                                <rect key="frame" x="0.0" y="245" width="103.5" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85585135219999997" green="0.87644946580000005" blue="0.98432880639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="Sanitary Wipes">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="fls-Ja-wwb"/>
+                                    <action selector="paperTowel1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="fw9-lH-1LU"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoV-zx-PsL" userLabel="wb1">
@@ -371,11 +365,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85585135219999997" green="0.87644946580000005" blue="0.98432880639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="Water bottles">
+                                <state key="normal" title="Water Bottles">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="A7E-5M-Lux"/>
+                                    <action selector="waterbottle1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="0RE-M9-IBt"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YD9-sz-2XL" userLabel="cs1">
@@ -386,19 +381,8 @@
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="chapstick1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="AsT-Tg-iXo"/>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="QBT-er-1Ua"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avj-kg-LVF" userLabel="electronics1">
-                                <rect key="frame" x="310.5" y="175" width="108" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85585135219999997" green="0.87644946580000005" blue="0.98432880639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="Electronics">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="6wf-XQ-hl2"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8R-nS-rgC" userLabel="lotion1">
@@ -411,6 +395,7 @@
                                 </state>
                                 <connections>
                                     <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="jB1-fN-KTq"/>
+                                    <action selector="lotion1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="319-mq-FCs"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmd-2f-K1f" userLabel="masks2">
@@ -475,6 +460,9 @@
                                 <state key="normal" title="Sanitary Wipes">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="needTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="KWG-Uq-Kpp"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcW-mN-h4e" userLabel="cf2">
                                 <rect key="frame" x="207" y="675" width="103.5" height="70"/>
@@ -490,7 +478,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85585135219999997" green="0.87644946580000005" blue="0.98432880639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="Water bottles">
+                                <state key="normal" title="Water Bottles">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -551,16 +539,37 @@
                                     <segue destination="C2p-hu-29s" kind="showDetail" id="Ftb-Fk-wba"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsN-vz-nlr" userLabel="cf1">
-                                <rect key="frame" x="207" y="315" width="103.5" height="70"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rT-jU-UWS" userLabel="electronics1">
+                                <rect key="frame" x="310.5" y="175" width="103.5" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85585135219999997" green="0.87644946580000005" blue="0.98432880639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="Canned Food">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Electronics">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="f48-F0-tXm"/>
+                                    <action selector="electronics1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="XB6-ba-wVq"/>
+                                    <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="hfo-yn-GXj"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7w-cQ-KZt" userLabel="sw2">
+                                <rect key="frame" x="0.0" y="245" width="103.5" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sanitary Wipes">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="haveTapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="xbo-Kz-zuN"/>
+                                    <action selector="sanitary1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="btx-vY-ils"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYC-1U-g7V" userLabel="cf1">
+                                <rect key="frame" x="207" y="315" width="103.5" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Canned Food">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cannedfood1Tapped:" destination="ypi-zu-FLe" eventType="touchUpInside" id="X7e-Dn-iVO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -568,16 +577,25 @@
                         <viewLayoutGuide key="safeArea" id="2Ze-m6-Dvj"/>
                     </view>
                     <connections>
+                        <outlet property="cannedfoodbutton1" destination="UYC-1U-g7V" id="kpE-p1-jA4"/>
+                        <outlet property="chapstickbutton1" destination="YD9-sz-2XL" id="Cxj-pT-KUP"/>
+                        <outlet property="electronicsbutton1" destination="5rT-jU-UWS" id="N5E-xG-eDB"/>
+                        <outlet property="glovesbutton1" destination="YNO-Ip-Hks" id="sF2-RK-jaw"/>
+                        <outlet property="handsanibutton1" destination="vBt-eQ-UJJ" id="a69-Ld-p03"/>
+                        <outlet property="lotionbutton1" destination="l8R-nS-rgC" id="Sh8-b3-Y8q"/>
+                        <outlet property="masksbutton1" destination="bo0-Qr-1Ey" id="foW-f5-Nyg"/>
+                        <outlet property="papertowelsbutton1" destination="q5X-kC-kLx" id="3Sz-Di-Rxb"/>
+                        <outlet property="sanitarybutton1" destination="g7w-cQ-KZt" id="iAW-Rk-3nV"/>
+                        <outlet property="soapbutton1" destination="Lp7-10-Bg2" id="Bxe-Vk-gPp"/>
+                        <outlet property="toiletpaperbutton1" destination="5QU-U0-Qgg" id="h6i-Yj-wZB"/>
+                        <outlet property="waterbutton1" destination="qoV-zx-PsL" id="8Hy-qW-Y3u"/>
                         <outletCollection property="haveCollection" destination="bo0-Qr-1Ey" collectionClass="NSMutableArray" id="Hfy-pp-NgH"/>
                         <outletCollection property="haveCollection" destination="vBt-eQ-UJJ" collectionClass="NSMutableArray" id="vTZ-Ec-gvM"/>
                         <outletCollection property="haveCollection" destination="YNO-Ip-Hks" collectionClass="NSMutableArray" id="fOG-OP-FMl"/>
                         <outletCollection property="haveCollection" destination="Lp7-10-Bg2" collectionClass="NSMutableArray" id="U5d-23-Dcz"/>
                         <outletCollection property="haveCollection" destination="5QU-U0-Qgg" collectionClass="NSMutableArray" id="HCa-Cd-9w7"/>
                         <outletCollection property="haveCollection" destination="q5X-kC-kLx" collectionClass="NSMutableArray" id="fhT-NP-8aY"/>
-                        <outletCollection property="haveCollection" destination="2Rs-rq-MeT" collectionClass="NSMutableArray" id="IGM-Ca-Dde"/>
-                        <outletCollection property="haveCollection" destination="vsN-vz-nlr" collectionClass="NSMutableArray" id="nIh-QU-K07"/>
                         <outletCollection property="haveCollection" destination="qoV-zx-PsL" collectionClass="NSMutableArray" id="g5d-28-fXO"/>
-                        <outletCollection property="haveCollection" destination="avj-kg-LVF" collectionClass="NSMutableArray" id="WkC-SF-m7m"/>
                         <outletCollection property="haveCollection" destination="l8R-nS-rgC" collectionClass="NSMutableArray" id="Ndn-SO-KSZ"/>
                         <outletCollection property="haveCollection" destination="YD9-sz-2XL" collectionClass="NSMutableArray" id="uvH-Ob-V4e"/>
                         <outletCollection property="needCollection" destination="Wmd-2f-K1f" collectionClass="NSMutableArray" id="6BO-Qq-hfF"/>
@@ -592,6 +610,9 @@
                         <outletCollection property="needCollection" destination="Q6M-nT-pbo" collectionClass="NSMutableArray" id="A4Y-Xq-q68"/>
                         <outletCollection property="needCollection" destination="0P6-cF-Kcs" collectionClass="NSMutableArray" id="xnW-kN-aQ4"/>
                         <outletCollection property="needCollection" destination="9PC-fL-RMi" collectionClass="NSMutableArray" id="r6w-04-tLO"/>
+                        <outletCollection property="haveCollection" destination="5rT-jU-UWS" collectionClass="NSMutableArray" id="CmI-Ub-jqO"/>
+                        <outletCollection property="haveCollection" destination="g7w-cQ-KZt" collectionClass="NSMutableArray" id="ych-Af-KvQ"/>
+                        <outletCollection property="haveCollection" destination="UYC-1U-g7V" collectionClass="NSMutableArray" id="byn-yS-NPE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zQQ-Bv-yRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -56,7 +56,7 @@ class loginController: UIViewController, UITextFieldDelegate {
         if !(email.hasText && password.hasText) {
             self.error.text = "Missing email and/or password"
             self.error.isHidden = false
-            print("Either missing email or password")
+            
         }
         if let emailLiteral = email.text, let passwordLiteral = password.text {
         
@@ -127,16 +127,16 @@ class loginController: UIViewController, UITextFieldDelegate {
             if let email1 = email.text {
                 Auth.auth().sendPasswordReset(withEmail: email1) { error in
                     if error != nil {
-                        print("Email doesn't exist")
+                        self.error.text = "Email doesn't exist"
                     }
                     else {
-                        print("Reset successful")
+                        self.error.text = "Reset successful"
                     }
                 }
             }
         }
         else {
-            print("Please enter email")
+            self.error.text = "Please enter email"
         }
     }
     
@@ -152,11 +152,9 @@ class loginController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return (true)
     }
-    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! ViewControllerSupplement
+        let vc = segue.destination as! itemsController
+        vc.user = username
     }
-    */
-    
     
 }
