@@ -21,6 +21,7 @@ class loginController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var confirmpassword: UITextField!
     @IBOutlet weak var forgot: UIButton!
     @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var error: UILabel!
     
     var prevUser:Bool = true
     var id = ""
@@ -36,7 +37,7 @@ class loginController: UIViewController, UITextFieldDelegate {
             label.font.withSize(10)
             confirmpassword.isHidden = false
             signIn.titleLabel?.text = "REGISTER"
-            email.isHidden = false
+            username.isHidden = false
             forgot.isHidden = false
             prevUser = false
         }
@@ -45,12 +46,18 @@ class loginController: UIViewController, UITextFieldDelegate {
             confirmpassword.isHidden = true
             signIn.titleLabel?.text = "LOGIN"
             forgot.isHidden = false
-            email.isHidden = true
+            username.isHidden = true
             prevUser = true
         }
     }
     
-    func loginButtonPressed (_ sender: UIButton) {
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        if !(email.hasText && password.hasText) {
+            self.error.text = "Missing email and/or password"
+            self.error.isHidden = false
+            print("Either missing email or password")
+        }
         if let emailLiteral = email.text, let passwordLiteral = password.text {
         
         if prevUser {
@@ -58,6 +65,9 @@ class loginController: UIViewController, UITextFieldDelegate {
                 if user != nil {
                     self.id = emailLiteral
                     self.performSegue(withIdentifier: "toItems", sender: self)
+                    let vcm = self.storyboard?.instantiateViewController(identifier: "itemsController")
+                    self.present(vcm!, animated: true)
+                    print("True")
                 }
                 else {
                     //error
@@ -70,6 +80,7 @@ class loginController: UIViewController, UITextFieldDelegate {
                 if user != nil {
                     self.id = emailLiteral
                     self.performSegue(withIdentifier: "toItems", sender: self)
+                    print("False")
                 }
                 else {
                     //error
@@ -78,6 +89,57 @@ class loginController: UIViewController, UITextFieldDelegate {
         }
         }
     }
+    
+//    func loginButtonPressed (_ sender: UIButton) {
+//        if !(email.hasText && password.hasText) {
+//            print("One missing")
+//        }
+//        if let emailLiteral = email.text, let passwordLiteral = password.text {
+//
+//        if prevUser {
+//            Auth.auth().signIn(withEmail: emailLiteral , password: passwordLiteral) { (user, error) in
+//                if user != nil {
+//                    self.id = emailLiteral
+//                    self.performSegue(withIdentifier: "toItems", sender: self)
+//                }
+//                else {
+//                    //error
+//                }
+//            }
+//        }
+//
+//        else {
+//            Auth.auth().createUser(withEmail: emailLiteral, password: passwordLiteral) { (user, error) in
+//                if user != nil {
+//                    self.id = emailLiteral
+//                    self.performSegue(withIdentifier: "toItems", sender: self)
+//                }
+//                else {
+//                    //error
+//                }
+//            }
+//        }
+//        }
+//    }
+    
+    @IBAction func forgetPasswordTapped(_ sender: Any) {
+        if email.hasText {
+            if let email1 = email.text {
+                Auth.auth().sendPasswordReset(withEmail: email1) { error in
+                    if error != nil {
+                        print("Email doesn't exist")
+                    }
+                    else {
+                        print("Reset successful")
+                    }
+                }
+            }
+        }
+        else {
+            print("Please enter email")
+        }
+    }
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //           self.view.endEditing(true)
