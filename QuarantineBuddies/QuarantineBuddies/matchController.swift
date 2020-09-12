@@ -13,6 +13,7 @@ import Firebase
 
 class matchController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var has1: UILabel!
     private var locationManager:CLLocationManager?
     
      private let latLngLabel: UILabel = {
@@ -33,6 +34,8 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         locationManager?.requestAlwaysAuthorization()
         locationManager?.startUpdatingLocation()
         locationManager?.delegate = self
+        
+        matchUp()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -66,10 +69,10 @@ class matchController: UIViewController, CLLocationManagerDelegate {
             }
         }
         
-    
     }
     
     func matchUp() {
+        print("Hi")
         let db = Firestore.firestore()
         let needsMasks = db.collection("users").whereField("masks", isEqualTo: false)
         needsMasks.getDocuments() { (querySnapshot, err) in
@@ -78,13 +81,14 @@ class matchController: UIViewController, CLLocationManagerDelegate {
                 } else {
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
-                        print("Hi")
+                    
                     }
-                }
-
+            }
         }
         
     }
+    
+    
 
 }
 
