@@ -33,7 +33,7 @@ class loginController: UIViewController, UITextFieldDelegate {
             label.font.withSize(10)
             confirmpassword.isHidden = false
             signIn.titleLabel?.text = "REGISTER"
-            email.isHidden = true
+            email.isHidden = false
             forgot.isHidden = false
         }
         else {
