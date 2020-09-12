@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>72677485698-8jos9vjm9ns3ektp5aikltifb2q2nebr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.72677485698-8jos9vjm9ns3ektp5aikltifb2q2nebr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB3YwrGvUR0yIy4kkVBLl2vKwodl8wAiRc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>72677485698</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.test.QuarantineBuddies</string>
+	<key>PROJECT_ID</key>
+	<string>quarantine-buddies-9bac7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>quarantine-buddies-9bac7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:72677485698:ios:4fb202095a03fed25d989b</string>
+	<key>DATABASE_URL</key>
+	<string>https://quarantine-buddies-9bac7.firebaseio.com</string>
+</dict>
+</plist>
