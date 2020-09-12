@@ -9,6 +9,7 @@
 import Foundation
 import CoreLocation
 import UIKit
+import Firebase
 
 class matchController: UIViewController, CLLocationManagerDelegate {
     
@@ -66,6 +67,23 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         }
         
     
+    }
+    
+    func matchUp() {
+        let db = Firestore.firestore()
+        let needsMasks = db.collection("users").whereField("masks", isEqualTo: false)
+        needsMasks.getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                        print("Hi")
+                    }
+                }
+
+        }
+        
     }
 
 }
