@@ -269,6 +269,15 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-YH-RaK">
+                                <rect key="frame" x="185" y="753" width="44" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="aYf-J6-3QG" kind="showDetail" id="kgc-6c-VsJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.85945886370000002" green="0.87602818010000005" blue="0.9764928222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="eR7-P0-G5A"/>
@@ -279,19 +288,19 @@
             <point key="canvasLocation" x="3185.507246376812" y="118.52678571428571"/>
         </scene>
         <!--ChatController-->
-        <scene sceneID="TzL-WM-SXL">
+        <scene sceneID="MyT-hk-91h">
             <objects>
-                <viewController title="ChatController" id="cxO-Gf-gnh" customClass="chatController" customModule="QuarantineBuddies" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nQu-He-Y1U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController title="ChatController" id="aYf-J6-3QG" customClass="chatViewController" customModule="QuarantineBuddies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2G-6z-qym">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="pPf-9r-ltW"/>
+                        <viewLayoutGuide key="safeArea" id="TEB-C5-grb"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5H2-I8-QWK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXb-ZE-jF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4051" y="119"/>
+            <point key="canvasLocation" x="3937.68115942029" y="119.86607142857142"/>
         </scene>
         <!--ItemsController-->
         <scene sceneID="pBk-v7-3Hk">
@@ -640,7 +649,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="LU9-lY-SyH"/>
         <segue reference="qbL-HB-lvS"/>
-        <segue reference="Bcw-BJ-NP2"/>
+        <segue reference="r24-ga-vWX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logoQB" width="792" height="612"/>

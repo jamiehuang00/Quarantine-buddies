@@ -12,7 +12,7 @@
 		BB5F5650250C7C43002623F4 /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F564F250C7C43002623F4 /* registerController.swift */; };
 		BB5F5652250C7C51002623F4 /* itemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F5651250C7C51002623F4 /* itemsController.swift */; };
 		BB5F5654250C7C69002623F4 /* matchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F5653250C7C69002623F4 /* matchController.swift */; };
-		BB5F5656250C7CA3002623F4 /* chatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F5655250C7CA3002623F4 /* chatController.swift */; };
+		BB73995A250CB662001E2A1B /* chatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB739959250CB662001E2A1B /* chatViewController.swift */; };
 		BB90D4E8250C5B4A0006302E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90D4E7250C5B4A0006302E /* AppDelegate.swift */; };
 		BB90D4EA250C5B4A0006302E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90D4E9250C5B4A0006302E /* SceneDelegate.swift */; };
 		BB90D4EC250C5B4A0006302E /* TitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB90D4EB250C5B4A0006302E /* TitleController.swift */; };
@@ -30,7 +30,7 @@
 		BB5F564F250C7C43002623F4 /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
 		BB5F5651250C7C51002623F4 /* itemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemsController.swift; sourceTree = "<group>"; };
 		BB5F5653250C7C69002623F4 /* matchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchController.swift; sourceTree = "<group>"; };
-		BB5F5655250C7CA3002623F4 /* chatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatController.swift; sourceTree = "<group>"; };
+		BB739959250CB662001E2A1B /* chatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatViewController.swift; sourceTree = "<group>"; };
 		BB90D4E4250C5B4A0006302E /* QuarantineBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuarantineBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB90D4E7250C5B4A0006302E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB90D4E9250C5B4A0006302E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				BB90D4EB250C5B4A0006302E /* TitleController.swift */,
 				BB5F564D250C7C21002623F4 /* loginController.swift */,
 				BB90D4ED250C5B4A0006302E /* Main.storyboard */,
-				BB5F5655250C7CA3002623F4 /* chatController.swift */,
+				BB739959250CB662001E2A1B /* chatViewController.swift */,
 				BB5F5653250C7C69002623F4 /* matchController.swift */,
 				BB5F5651250C7C51002623F4 /* itemsController.swift */,
 				BB5F564F250C7C43002623F4 /* registerController.swift */,
@@ -231,8 +231,8 @@
 			files = (
 				BB90D4EC250C5B4A0006302E /* TitleController.swift in Sources */,
 				BB5F564E250C7C21002623F4 /* loginController.swift in Sources */,
+				BB73995A250CB662001E2A1B /* chatViewController.swift in Sources */,
 				BB90D4E8250C5B4A0006302E /* AppDelegate.swift in Sources */,
-				BB5F5656250C7CA3002623F4 /* chatController.swift in Sources */,
 				BB5F5650250C7C43002623F4 /* registerController.swift in Sources */,
 				BB5F5652250C7C51002623F4 /* itemsController.swift in Sources */,
 				BB90D4EA250C5B4A0006302E /* SceneDelegate.swift in Sources */,

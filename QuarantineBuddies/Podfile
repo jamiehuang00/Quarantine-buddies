@@ -9,5 +9,6 @@ target 'QuarantineBuddies' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+pod 'MessageKit'
   inherit! :search_paths
 end
