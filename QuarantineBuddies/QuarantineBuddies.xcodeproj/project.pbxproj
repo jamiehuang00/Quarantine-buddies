@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3903AF971133FAA52F0FC293 /* Pods_QuarantineBuddies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A87CF951BB0125351D8CF9 /* Pods_QuarantineBuddies.framework */; };
 		BB5F564E250C7C21002623F4 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F564D250C7C21002623F4 /* loginController.swift */; };
 		BB5F5650250C7C43002623F4 /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F564F250C7C43002623F4 /* registerController.swift */; };
 		BB5F5652250C7C51002623F4 /* itemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F5651250C7C51002623F4 /* itemsController.swift */; };
@@ -18,9 +19,13 @@
 		BB90D4EF250C5B4A0006302E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB90D4ED250C5B4A0006302E /* Main.storyboard */; };
 		BB90D4F1250C5B4C0006302E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90D4F0250C5B4C0006302E /* Assets.xcassets */; };
 		BB90D4F4250C5B4C0006302E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB90D4F2250C5B4C0006302E /* LaunchScreen.storyboard */; };
+		F9C6CC85250C94000009F1BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9C6CC84250C93FF0009F1BD /* GoogleService-Info.plist */; };
+		F9E551AD250C8A5F00FE2552 /* Pods-QuarantineBuddies.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BED7E4FFE3A15C51FFDF1F41 /* Pods-QuarantineBuddies.debug.xcconfig */; };
+		F9E551AE250C8A6400FE2552 /* Pods-QuarantineBuddies.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E8665BC06DEC854CAAA91AE7 /* Pods-QuarantineBuddies.release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06A87CF951BB0125351D8CF9 /* Pods_QuarantineBuddies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuarantineBuddies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5F564D250C7C21002623F4 /* loginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		BB5F564F250C7C43002623F4 /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
 		BB5F5651250C7C51002623F4 /* itemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemsController.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		BB90D4F0250C5B4C0006302E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB90D4F3250C5B4C0006302E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB90D4F5250C5B4C0006302E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED7E4FFE3A15C51FFDF1F41 /* Pods-QuarantineBuddies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuarantineBuddies.debug.xcconfig"; path = "Target Support Files/Pods-QuarantineBuddies/Pods-QuarantineBuddies.debug.xcconfig"; sourceTree = "<group>"; };
+		E8665BC06DEC854CAAA91AE7 /* Pods-QuarantineBuddies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuarantineBuddies.release.xcconfig"; path = "Target Support Files/Pods-QuarantineBuddies/Pods-QuarantineBuddies.release.xcconfig"; sourceTree = "<group>"; };
+		F9C6CC84250C93FF0009F1BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3903AF971133FAA52F0FC293 /* Pods_QuarantineBuddies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9193C6017270B88D9AE47DD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BED7E4FFE3A15C51FFDF1F41 /* Pods-QuarantineBuddies.debug.xcconfig */,
+				E8665BC06DEC854CAAA91AE7 /* Pods-QuarantineBuddies.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BB90D4DB250C5B4A0006302E = {
 			isa = PBXGroup;
 			children = (
 				BB90D4E6250C5B4A0006302E /* QuarantineBuddies */,
 				BB90D4E5250C5B4A0006302E /* Products */,
+				9193C6017270B88D9AE47DD6 /* Pods */,
+				CDDFA614CDBD45D8AEB49A36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +86,7 @@
 		BB90D4E6250C5B4A0006302E /* QuarantineBuddies */ = {
 			isa = PBXGroup;
 			children = (
+				F9C6CC84250C93FF0009F1BD /* GoogleService-Info.plist */,
 				BB90D4E7250C5B4A0006302E /* AppDelegate.swift */,
 				BB90D4E9250C5B4A0006302E /* SceneDelegate.swift */,
 				BB90D4EB250C5B4A0006302E /* TitleController.swift */,
@@ -82,6 +103,14 @@
 			path = QuarantineBuddies;
 			sourceTree = "<group>";
 		};
+		CDDFA614CDBD45D8AEB49A36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06A87CF951BB0125351D8CF9 /* Pods_QuarantineBuddies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB90D4F8250C5B4C0006302E /* Build configuration list for PBXNativeTarget "QuarantineBuddies" */;
 			buildPhases = (
+				D27D08C97000EF518F2B3F5E /* [CP] Check Pods Manifest.lock */,
 				BB90D4E0250C5B4A0006302E /* Sources */,
 				BB90D4E1250C5B4A0006302E /* Frameworks */,
 				BB90D4E2250C5B4A0006302E /* Resources */,
+				E7295C027AA632B405DF772B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,13 +171,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E551AD250C8A5F00FE2552 /* Pods-QuarantineBuddies.debug.xcconfig in Resources */,
 				BB90D4F4250C5B4C0006302E /* LaunchScreen.storyboard in Resources */,
 				BB90D4F1250C5B4C0006302E /* Assets.xcassets in Resources */,
+				F9C6CC85250C94000009F1BD /* GoogleService-Info.plist in Resources */,
 				BB90D4EF250C5B4A0006302E /* Main.storyboard in Resources */,
+				F9E551AE250C8A6400FE2552 /* Pods-QuarantineBuddies.release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D27D08C97000EF518F2B3F5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuarantineBuddies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7295C027AA632B405DF772B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuarantineBuddies/Pods-QuarantineBuddies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuarantineBuddies/Pods-QuarantineBuddies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuarantineBuddies/Pods-QuarantineBuddies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB90D4E0250C5B4A0006302E /* Sources */ = {
@@ -302,6 +378,7 @@
 		};
 		BB90D4F9250C5B4C0006302E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED7E4FFE3A15C51FFDF1F41 /* Pods-QuarantineBuddies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +396,7 @@
 		};
 		BB90D4FA250C5B4C0006302E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8665BC06DEC854CAAA91AE7 /* Pods-QuarantineBuddies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
