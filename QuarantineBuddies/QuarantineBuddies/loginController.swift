@@ -76,6 +76,15 @@ class loginController: UIViewController, UITextFieldDelegate {
         }
             
         else {
+            if segment.selectedSegmentIndex == 1 && !(username.hasText) {
+                self.error.text = "Missing username"
+            }
+            else if segment.selectedSegmentIndex == 1 && !(confirmpassword.hasText) {
+                self.error.text = "Please confirm password"
+            }
+            else if password.text != confirmpassword.text {
+                self.error.text = "Passwords don't match"
+            }
             Auth.auth().createUser(withEmail: emailLiteral, password: passwordLiteral) { (user, error) in
                 if user != nil {
                     self.id = emailLiteral
@@ -89,38 +98,6 @@ class loginController: UIViewController, UITextFieldDelegate {
         }
         }
     }
-    
-//    func loginButtonPressed (_ sender: UIButton) {
-//        if !(email.hasText && password.hasText) {
-//            print("One missing")
-//        }
-//        if let emailLiteral = email.text, let passwordLiteral = password.text {
-//
-//        if prevUser {
-//            Auth.auth().signIn(withEmail: emailLiteral , password: passwordLiteral) { (user, error) in
-//                if user != nil {
-//                    self.id = emailLiteral
-//                    self.performSegue(withIdentifier: "toItems", sender: self)
-//                }
-//                else {
-//                    //error
-//                }
-//            }
-//        }
-//
-//        else {
-//            Auth.auth().createUser(withEmail: emailLiteral, password: passwordLiteral) { (user, error) in
-//                if user != nil {
-//                    self.id = emailLiteral
-//                    self.performSegue(withIdentifier: "toItems", sender: self)
-//                }
-//                else {
-//                    //error
-//                }
-//            }
-//        }
-//        }
-//    }
     
     @IBAction func forgetPasswordTapped(_ sender: Any) {
         if email.hasText {
