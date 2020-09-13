@@ -37,7 +37,7 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         locationManager?.requestAlwaysAuthorization()
         locationManager?.startUpdatingLocation()
         locationManager?.delegate = self
-        
+        matchUpHas()
         matchUpNeeds()
     }
     
@@ -74,26 +74,40 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    func matchUpHas() {
+        let db = Firestore.firestore()
+        let usersRef = db.collection("users")
+        for i in 0 ..< selfNeeds.count {
+            let peopleNeeds = usersRef.whereField(selfNeeds[i], isEqualTo: true)
+            peopleNeeds.getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                }
+                else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                    }
+                }
+            }
+        }
+    }
+    
     func matchUpNeeds() {
         let db = Firestore.firestore()
         let usersRef = db.collection("users")
-        
-//        usersRef.whereField(arrayContainsAny: ["west_coast", "east_coast"])
-        
-        let needsMasks = db.collection("users").whereField("masks", isEqualTo: false)
-        needsMasks.getDocuments() { (querySnapshot, err) in
+        for i in 0 ..< selfHas.count {
+            let peopleNeeds = usersRef.whereField(selfHas[i], isEqualTo: false)
+            peopleNeeds.getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
-                } else {
+                }
+                else {
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
-                    
                     }
+                }
             }
         }
-        
     }
 
 }
-
-
