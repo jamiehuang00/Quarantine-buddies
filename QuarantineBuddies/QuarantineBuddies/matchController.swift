@@ -18,6 +18,7 @@ class matchController: UIViewController, CLLocationManagerDelegate {
     var username: UITextField!
     var selfHas = [String]()
     var selfNeeds = [String]()
+    let chatbutton = UIButton(frame: CGRect(x: 100, y: 600, width: 40, height: 40))
     
      private let latLngLabel: UILabel = {
            let label = UILabel()
@@ -41,6 +42,11 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         latLngLabel.frame = CGRect(x: 20, y: view.bounds.height / 2 - 380, width: view.bounds.width - 40, height: 60)
         view.addSubview(latLngLabel)
+        
+        chatbutton.backgroundColor = .systemBlue
+        chatbutton.setTitle("Chat", for: .normal)
+        chatbutton.isHidden = true
+        self.view.addSubview(chatbutton)
         
         locationManager = CLLocationManager()
         locationManager?.requestAlwaysAuthorization()
@@ -95,9 +101,10 @@ class matchController: UIViewController, CLLocationManagerDelegate {
                 else {
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
-                        self.haslabel.frame = CGRect(x: 20, y: self.view.bounds.height / 2 + 80, width: self.view.bounds.width - 40, height: 60)
+                        self.haslabel.frame = CGRect(x: 20, y: self.view.bounds.height / 2 + 80, width: self.view.bounds.width - 40, height: 40)
                         self.view.addSubview(self.haslabel)
-                        self.haslabel.text = document.documentID
+                        self.haslabel.text = document.documentID + ": " + self.selfNeeds[i]
+                        self.chatbutton.isHidden = false
                     }
                 }
             }
