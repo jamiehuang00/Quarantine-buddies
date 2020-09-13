@@ -84,7 +84,7 @@ class itemsController: UIViewController {
                 "masks": true
             ], merge: true)
         }
-        masksbutton1.backgroundColor = UIColor.purple
+        masksbutton1.backgroundColor = UIColor.systemYellow
     }
     
     @IBAction func gloves1Tapped(_ sender: Any) {
@@ -94,7 +94,7 @@ class itemsController: UIViewController {
                    "gloves": true
                ], merge: true)
            }
-        glovesbutton1.backgroundColor = UIColor.purple
+        glovesbutton1.backgroundColor = UIColor.systemYellow
        }
     
     
@@ -105,7 +105,7 @@ class itemsController: UIViewController {
                 "toilet paper": true
             ], merge: true)
         }
-        toiletpaperbutton1.backgroundColor = UIColor.purple
+        toiletpaperbutton1.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -116,7 +116,7 @@ class itemsController: UIViewController {
                 "electronics": true
             ], merge: true)
         }
-        electronicsbutton1.backgroundColor = UIColor.purple
+        electronicsbutton1.backgroundColor = UIColor.systemYellow
     }
     
     @IBAction func sanitary1Tapped(_ sender: Any) {
@@ -126,7 +126,7 @@ class itemsController: UIViewController {
                 "sanitary wipes": true
             ], merge: true)
         }
-        sanitarybutton1.backgroundColor = UIColor.purple
+        sanitarybutton1.backgroundColor = UIColor.systemYellow
     }
     
     @IBAction func soap1Tapped(_ sender: Any) {
@@ -136,7 +136,7 @@ class itemsController: UIViewController {
                 "soap": true
             ], merge: true)
         }
-        soapbutton1.backgroundColor = UIColor.purple
+        soapbutton1.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -147,7 +147,7 @@ class itemsController: UIViewController {
                 "water bottle": true
             ], merge: true)
         }
-        waterbutton1.backgroundColor = UIColor.purple
+        waterbutton1.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -158,7 +158,7 @@ class itemsController: UIViewController {
                 "lotion": true
             ], merge: true)
         }
-        lotionbutton1.backgroundColor = UIColor.purple
+        lotionbutton1.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -169,7 +169,7 @@ class itemsController: UIViewController {
                 "hand sani": true
             ], merge: true)
         }
-        handsanibutton1.backgroundColor = UIColor.purple
+        handsanibutton1.backgroundColor = UIColor.systemYellow
     }
     
     @IBAction func paperTowel1Tapped(_ sender: Any) {
@@ -179,7 +179,7 @@ class itemsController: UIViewController {
                 "paper towel": true
             ], merge: true)
         }
-        papertowelsbutton1.backgroundColor = UIColor.purple
+        papertowelsbutton1.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -190,7 +190,7 @@ class itemsController: UIViewController {
                 "canned food": true
             ], merge: true)
         }
-        cannedfoodbutton1.backgroundColor = UIColor.purple
+        cannedfoodbutton1.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -201,7 +201,7 @@ class itemsController: UIViewController {
                 "chapstick": true
             ], merge: true)
         }
-        chapstickbutton1.backgroundColor = UIColor.purple
+        chapstickbutton1.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -212,7 +212,7 @@ class itemsController: UIViewController {
                        "masks": false
                    ], merge: true)
                }
-               masksbutton2.backgroundColor = UIColor.purple
+               masksbutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -223,7 +223,7 @@ class itemsController: UIViewController {
                        "gloves": false
                    ], merge: true)
                }
-               glovesbutton2.backgroundColor = UIColor.purple
+               glovesbutton2.backgroundColor = UIColor.systemYellow
     }
     
     @IBAction func toiletpaper2Tapped(_ sender: Any) {
@@ -233,7 +233,7 @@ class itemsController: UIViewController {
                    "toilet paper": false
                ], merge: true)
            }
-           toiletpaperbutton2.backgroundColor = UIColor.purple
+           toiletpaperbutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -244,7 +244,7 @@ class itemsController: UIViewController {
                           "electronics": false
                       ], merge: true)
                   }
-                  electronicsbutton2.backgroundColor = UIColor.purple
+                  electronicsbutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -255,7 +255,7 @@ class itemsController: UIViewController {
                                  "sanitary wipes": false
                              ], merge: true)
                          }
-                         sanitarywipesbutton2.backgroundColor = UIColor.purple
+                         sanitarywipesbutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -266,7 +266,7 @@ class itemsController: UIViewController {
                                  "soap": false
                              ], merge: true)
                          }
-                         electronicsbutton2.backgroundColor = UIColor.purple
+                         soapbutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -277,7 +277,7 @@ class itemsController: UIViewController {
                 "water bottle": false
             ], merge: true)
         }
-        waterbottlebutton2.backgroundColor = UIColor.purple
+        waterbottlebutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -288,7 +288,7 @@ class itemsController: UIViewController {
                 "lotion": false
             ], merge: true)
         }
-        lotionbutton2.backgroundColor = UIColor.purple
+        lotionbutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -299,7 +299,7 @@ class itemsController: UIViewController {
                 "hand sani": false
             ], merge: true)
         }
-        handsanibutton2.backgroundColor = UIColor.purple
+        handsanibutton2.backgroundColor = UIColor.systemYellow
     }
     
     
@@ -310,7 +310,7 @@ class itemsController: UIViewController {
                 "paper towel": false
             ], merge: true)
         }
-        papertowelbutton2.backgroundColor = UIColor.purple
+        papertowelbutton2.backgroundColor = UIColor.systemYellow
     }
     
     @IBAction func cannedfood2Tapped(_ sender: Any) {
@@ -320,7 +320,7 @@ class itemsController: UIViewController {
                 "canned food": false
             ], merge: true)
         }
-        cannedfoodbutton2.backgroundColor = UIColor.purple
+        cannedfoodbutton2.backgroundColor = UIColor.systemYellow
     }
     
     @IBAction func chapstick2Tapped(_ sender: Any) {
@@ -330,7 +330,7 @@ class itemsController: UIViewController {
                     "chapstick": false
                 ], merge: true)
             }
-            chapbutton2.backgroundColor = UIColor.purple
+            chapbutton2.backgroundColor = UIColor.systemYellow
         }
     
 
