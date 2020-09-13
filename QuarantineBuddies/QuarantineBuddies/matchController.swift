@@ -49,9 +49,15 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         self.view.addSubview(chatbutton)
         
         locationManager = CLLocationManager()
+        var currentLocation: CLLocation!
         locationManager?.requestAlwaysAuthorization()
         locationManager?.startUpdatingLocation()
         locationManager?.delegate = self
+        if let user = username.text {
+            let db = Firestore.firestore()
+            db.collection("users").document(user).setData(["latitude": locationManager?.location?.coordinate.latitude, "longitude": locationManager?.location?.coordinate.longitude], merge: true)
+            
+        }
         matchUpHas()
         matchUpNeeds()
     }
@@ -76,18 +82,19 @@ class matchController: UIViewController, CLLocationManagerDelegate {
                     print("error")
                 }
             })
-            let location2 = CLLocation(latitude: -37, longitude: -122)
-            let distance = location1.distance(from: location2) // result is in meters
-            print(distance)
-            if (distance <= 10) {
-                print("True")
-            }
-            else {
-                print("False")
-            }
+//            let location2 = CLLocation(latitude: -37, longitude: -122)
+//            let distance = location1.distance(from: location2) // result is in meters
+//            print(distance)
+//            if (distance <= 20*1609) { //20 miles
+//                print("True")
+//            }
+//            else {
+//                print("False")
+//            }
         }
         
     }
+    
     
     func matchUpHas() {
         let db = Firestore.firestore()
@@ -100,6 +107,28 @@ class matchController: UIViewController, CLLocationManagerDelegate {
                 }
                 else {
                     for document in querySnapshot!.documents {
+                        
+//                        self.locationManager = CLLocationManager()
+//                        var currentLocation: CLLocation!
+                        
+//                        currentLocation.coordinate.latitude = [document.get("latitude")];
+//                        currentLocation.coordinate.longitude = [document.get("longitude") floatValue];
+                        
+//                        String lat = document.get("latitude")
+//
+//                        currentLocation.coordinate.latitude lat1 = document.get("latitude")
+//                        currentLocation.coordinate.longitude long = document.get("longitude")
+                        
+                        
+                        
+//                        CLlocation.latitude lat =
+//                        longitude long = document.get("longitude")
+//
+//                        let location1 = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+//
+//
+//                        let distance = currentLocation.distance(from: CLLocation(latitude: document.get("latitude"), longitude: document.get("longitude"), document.coordinate.longitude))
+                        
                         print("\(document.documentID) => \(document.data())")
                         self.haslabel.frame = CGRect(x: 20, y: self.view.bounds.height / 2 + 80, width: self.view.bounds.width - 40, height: 40)
                         self.view.addSubview(self.haslabel)
