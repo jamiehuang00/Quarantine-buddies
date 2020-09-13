@@ -44,6 +44,8 @@ class itemsController: UIViewController {
     @IBOutlet var needCollection: [UIButton]!
 
     var user: UITextField!
+    var userNeeds = [String]()
+    var userHas = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +87,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         masksbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("masks")
     }
     
     @IBAction func gloves1Tapped(_ sender: Any) {
@@ -95,6 +98,7 @@ class itemsController: UIViewController {
                ], merge: true)
            }
         glovesbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("gloves")
        }
     
     
@@ -106,6 +110,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         toiletpaperbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("toilet paper")
     }
     
     
@@ -117,6 +122,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         electronicsbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("electronics")
     }
     
     @IBAction func sanitary1Tapped(_ sender: Any) {
@@ -127,6 +133,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         sanitarybutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("sanitary wipes")
     }
     
     @IBAction func soap1Tapped(_ sender: Any) {
@@ -137,6 +144,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         soapbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("soap")
     }
     
     
@@ -148,6 +156,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         waterbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("water bottle")
     }
     
     
@@ -159,6 +168,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         lotionbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("lotion")
     }
     
     
@@ -170,6 +180,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         handsanibutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("hand sani")
     }
     
     @IBAction func paperTowel1Tapped(_ sender: Any) {
@@ -180,6 +191,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         papertowelsbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("paper towel")
     }
     
     
@@ -191,6 +203,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         cannedfoodbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("canned food")
     }
     
     
@@ -202,6 +215,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         chapstickbutton1.backgroundColor = UIColor.systemYellow
+        userHas.append("chapstick")
     }
     
     
@@ -213,6 +227,7 @@ class itemsController: UIViewController {
                    ], merge: true)
                }
                masksbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("masks")
     }
     
     
@@ -224,6 +239,7 @@ class itemsController: UIViewController {
                    ], merge: true)
                }
                glovesbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("gloves")
     }
     
     @IBAction func toiletpaper2Tapped(_ sender: Any) {
@@ -234,6 +250,7 @@ class itemsController: UIViewController {
                ], merge: true)
            }
            toiletpaperbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("toilet paper")
     }
     
     
@@ -245,6 +262,7 @@ class itemsController: UIViewController {
                       ], merge: true)
                   }
                   electronicsbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("electronics")
     }
     
     
@@ -256,6 +274,8 @@ class itemsController: UIViewController {
                              ], merge: true)
                          }
                          sanitarywipesbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("sanitary wipes")
+        
     }
     
     
@@ -267,6 +287,7 @@ class itemsController: UIViewController {
                              ], merge: true)
                          }
                          soapbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("soap")
     }
     
     
@@ -278,6 +299,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         waterbottlebutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("water bottle")
     }
     
     
@@ -289,6 +311,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         lotionbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("lotion")
     }
     
     
@@ -300,6 +323,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         handsanibutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("hand sani")
     }
     
     
@@ -311,6 +335,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         papertowelbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("paper towel")
     }
     
     @IBAction func cannedfood2Tapped(_ sender: Any) {
@@ -321,6 +346,7 @@ class itemsController: UIViewController {
             ], merge: true)
         }
         cannedfoodbutton2.backgroundColor = UIColor.systemYellow
+        userNeeds.append("canned food")
     }
     
     @IBAction func chapstick2Tapped(_ sender: Any) {
@@ -331,7 +357,14 @@ class itemsController: UIViewController {
                 ], merge: true)
             }
             chapbutton2.backgroundColor = UIColor.systemYellow
-        }
+        userNeeds.append("chapstick")
+    }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! matchController
+        vc.username = user
+        vc.selfHas = userHas
+        vc.selfNeeds = userNeeds
+    }
+    
 }

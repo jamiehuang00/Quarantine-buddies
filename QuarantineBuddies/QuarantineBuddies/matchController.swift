@@ -15,6 +15,9 @@ class matchController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var has1: UILabel!
     private var locationManager:CLLocationManager?
+    var username: UITextField!
+    var selfHas = [String]()
+    var selfNeeds = [String]()
     
      private let latLngLabel: UILabel = {
            let label = UILabel()
@@ -35,7 +38,7 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         locationManager?.startUpdatingLocation()
         locationManager?.delegate = self
         
-        matchUp()
+        matchUpNeeds()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -71,9 +74,12 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    func matchUp() {
-        print("Hi")
+    func matchUpNeeds() {
         let db = Firestore.firestore()
+        let usersRef = db.collection("users")
+        
+//        usersRef.whereField(arrayContainsAny: ["west_coast", "east_coast"])
+        
         let needsMasks = db.collection("users").whereField("masks", isEqualTo: false)
         needsMasks.getDocuments() { (querySnapshot, err) in
                 if let err = err {
@@ -87,8 +93,6 @@ class matchController: UIViewController, CLLocationManagerDelegate {
         }
         
     }
-    
-    
 
 }
 
