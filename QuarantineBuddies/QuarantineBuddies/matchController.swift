@@ -28,6 +28,15 @@ class matchController: UIViewController, CLLocationManagerDelegate {
            return label
        }()
     
+    private let haslabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .systemFill
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 15)
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         latLngLabel.frame = CGRect(x: 20, y: view.bounds.height / 2 - 380, width: view.bounds.width - 40, height: 60)
@@ -86,6 +95,9 @@ class matchController: UIViewController, CLLocationManagerDelegate {
                 else {
                     for document in querySnapshot!.documents {
                         print("\(document.documentID) => \(document.data())")
+                        self.haslabel.frame = CGRect(x: 20, y: self.view.bounds.height / 2 + 80, width: self.view.bounds.width - 40, height: 60)
+                        self.view.addSubview(self.haslabel)
+                        self.haslabel.text = document.documentID
                     }
                 }
             }
